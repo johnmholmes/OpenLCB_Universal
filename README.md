@@ -10,13 +10,14 @@ Native channels, using the processors pins:
   * 8 i/o channels, each of which can be an input or an output,
     If an output it may be solid, pulse or flashing, and consumes an on- and 0ff-event. 
     If an input it produces an on- and off-event, which may each be delayed.  The 
-     inputs can be with or without pullups, inverted or not, or can be toggle state change. 
-Two MCP23017 Port Expanders
+     inputs can be with or without pullups, inverted or not, or can be toggle state change.
+    
+Two MCP23017 Port Expanders Address 0x20 for the first module and 0x21 for the second module.
   * Each with two banks of 8 i/o channels
   * These have the same characteristics as the native i/o.
   * See: e.g. https://www.amazon.ca/MCP23017-MCP23017-Expander-Expansion-3-0V-5-5V/dp/B0FHRRVKSP/
     
-Two PCA9685 Servo Expander
+Two PCA9685 Servo Expander Adress 0x40 for the first module and 0x41 for the second module.
   * Each has two banks of 8 servos
   * Each servo has two endpoint positions, controlled by to consumed events.
   * Each servo has two events, produced as the servo passes the midpoint between the two midpoints.  
