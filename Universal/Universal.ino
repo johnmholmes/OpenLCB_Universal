@@ -141,7 +141,7 @@ const char configDefInfo[] PROGMEM =
   <repname>MCP: on 0x21 </repname>
   <string size='24'><name>Description of the boards location</name></string>
   <string size='8'><name>This MCP is </name></string>
-  <group replication=')" N(2) R"('>
+  <group replication=')" N(NUM_MCP_PORTS) R"('>
     <name>Port banks selector care must be taken when using pins A7 or B7 as they are Ouptuts only</name>
     <repname>Port A</repname>
     <repname>Port B</repname>
@@ -193,11 +193,11 @@ const char configDefInfo[] PROGMEM =
   <repname>PCA: on 0x41 </repname>
   <string size='24'><name>Description for this PCA boards location</name></string>
   <string size='8'><name>This PCA is </name></string>
-  <group replication=')" N(NUM_PCA) R"('>
+  <group replication=')" N(NUM_PCA_PORTS) R"('>
   <name> Take note of the numbers in brackets are for channels 8 to 15</name>
     <repname>Channels 0-7</repname>
     <repname>Channels (8-15)</repname>
-    <group replication=')" N(8) R"('>
+    <group replication=')" N(NUM_PCA_SERVO_PER_PORT) R"('>
       <name>Servo pins start 0 to 15 check marking to ensure the servo is on the channel you think.</name>
       <repname>0(8)</repname>
       <repname>1(9)</repname>
