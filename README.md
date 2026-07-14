@@ -1,7 +1,7 @@
 # OpenLCB_Universal
 8 Native I/O 32 MCP I/O 32 Servo
 
-## Please be advised even though the sketch has other MCU options. It may not compile and work for other than for the ESP32 Wroom 32 version.
+## Please be advised even though the sketch has other MCU options. It may not compile and work for other than for the ESP32 Devkit 1 version.
 
 ## Please take a look at the issues section as this is used to raise an issue and the fix being put in place in the next version.
 
