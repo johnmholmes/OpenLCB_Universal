@@ -1,21 +1,29 @@
-ToDO / Ideas
+**Disclaimer and Limitation of Liability**
 
-1. Write own easing, that way we can detect the 50% of movement and activate the 'midpoint' events.  
-We can just copy the cubic and bounce, and maybe define our own.  
-2. Test detach and reattach.
-3. Test midpoint startup.
+This sketch (software) has been developed specifically for the **ESP32 Devkit 1** and the **SN65HVD230** CAN transceiver module. It has only been tested on the author’s personal model railway layout.
+
+**The sketch is provided “AS IS” and “AS AVAILABLE”**, without any warranties or guarantees of any kind. The author explicitly disclaims all warranties, whether express, implied, or statutory, including but not limited to any warranties of merchantability, fitness for a particular purpose, accuracy, reliability, or non-infringement.
+
+The author accepts **no responsibility or liability** for:
+- Any malfunction, failure, or unexpected behaviour of the sketch
+- Damage to hardware, loss of data, or disruption to your layout
+- Incompatibility caused by updates to third-party libraries, Arduino core, JMRI, or other software
+- Any direct, indirect, incidental, consequential, or punitive damages arising from the use or inability to use this sketch
+
+This code is offered strictly for **educational and hobbyist purposes** to help railway modellers learn how to use the OpenLCB Single Thread Library. It is not intended for commercial use, safety-critical applications, or any situation where failure could cause damage or injury.
+
+By downloading, using, or modifying this sketch, you acknowledge that you assume **all risk** and full responsibility for any outcomes resulting from its use.
+
+The author reserves the right to modify or remove this sketch at any time without notice.
+
+---
 
 
-
-
-ESP32 2SVO8IO2MCP2PCA Example.
+ESP32 8IO2MCP2PCA Example.
 
 This sketch implements: 
 Native channels, using the processors pins:
-  * two servos, each with three positions
-    Positions cabe set to angles 0-180
-    The 0 and 180 end-points of the servos can be configured.
-  * N i/o channels, each of which can be an input or an output,
+  * 8 i/o channels, each of which can be an input or an output,
     If an output it may be solid, pulse or flashing, and consumes an on- and 0ff-event. 
     If an input it produces an on- and off-event, which may each be delayed.  The 
      inputs can be with or with pullups, inverted or not, or can be toggle. 
